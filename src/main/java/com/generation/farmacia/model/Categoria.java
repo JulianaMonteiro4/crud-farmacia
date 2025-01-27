@@ -15,8 +15,8 @@ public class Categoria {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotNull(message = "O Atributo Indicação é obrigatório")
-	private String indicacao;
+	@NotNull(message = "O Atributo Nome é obrigatório")
+	private String nome;
 	
 	@NotNull(message = "O Atributo Descrição é obrigatório")
 	private String descricao;
@@ -30,11 +30,11 @@ public class Categoria {
 	}
 
 	public String getIndicacao() {
-		return indicacao;
+		return nome;
 	}
 
 	public void setIndicacao(String indicacao) {
-		this.indicacao = indicacao;
+		this.nome = indicacao;
 	}
 
 	public String getDescricao() {
